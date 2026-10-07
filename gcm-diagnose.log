@@ -1,0 +1,197 @@
+﻿Diagnose log at 2026-10-07T08:11:36Z
+
+AppPath: C:\Program Files\Git\mingw64\bin\git-credential-manager.exe
+InstallDir: C:\Program Files\Git\mingw64\bin\
+Version: 2.9.0+194ba290ce533465310d50f811684ab180536ae7
+
+------------
+Diagnostic: Environment
+Skipped: False
+Success: True
+Exception: None
+Log:
+OSType: Windows
+OSVersion: 10.0 (build 26200)
+Reading environment variables... OK
+ Variables:
+SESSIONNAME=Console
+ProgramFiles(x86)=C:\Program Files (x86)
+ProgramW6432=C:\Program Files
+PROCESSOR_IDENTIFIER=Intel64 Family 6 Model 140 Stepping 2, GenuineIntel
+OnlineServices=Online Services
+PROCESSOR_ARCHITECTURE=AMD64
+PATHEXT=.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.CPL
+HOMEPATH=\Users\dhina
+VSCODE_CWD=C:\Users\dhina\AppData\Local\Programs\Antigravity IDE
+USERDOMAIN_ROAMINGPROFILE=DHINA
+PROCESSOR_REVISION=8c02
+ANTIGRAVITY_SOURCE_METADATA={"tool":{"conversationId":"a2abf5d1-603f-4e08-9834-c586d0cfa9e6","stepIndex":93,"toolCall":{"id":"call_640470","name":"run_command","argumentsJson":"{\"CommandLine\":\"\\u0026 \\\"C:\\\\Program Files\\\\Git\\\\mingw64\\\\bin\\\\git-credential-manager.exe\\\" diagnose\",\"Cwd\":\"c:\\\\Users\\\\dhina\\\\OneDrive\\\\Desktop\\\\Downloads\\\\ComicCraft_Project\\\\ComicCraft\",\"WaitMsBeforeAsync\":5000,\"toolAction\":\"Diagnosing GCM configuration\",\"toolSummary\":\"Check GCM diagnosis\"}","thinkingSignature":"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","originalName":"run_command"}}}
+TEMP=C:\Users\dhina\AppData\Local\Temp
+USERPROFILE=C:\Users\dhina
+EFC_15848_3789132940=1
+USERNAME=dhina
+SystemRoot=C:\WINDOWS
+CHROME_CRASHPAD_PIPE_NAME=\\.\pipe\crashpad_596_XBSTDRMVEAWFJIWO
+PATH=C:\Program Files\WindowsApps\Microsoft.PowerShell_7.6.6.0_x64__8wekyb3d8bbwe;C:/Users/dhina/.gemini/antigravity-ide/bin;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Common Files\Oracle\Java\java8path;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\windows\system32;C:\windows;C:\windows\System32\Wbem;C:\windows\System32\WindowsPowerShell\v1.0\;C:\windows\System32\OpenSSH\;C:\Program Files\Common Files\Autodesk Shared\;C:\Program Files\Microsoft SQL Server\150\Tools\Binn\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\nodejs\;C:\Program Files\Git\cmd;C:\Users\dhina\AppData\Local\Programs\Python\Python312\Scripts;C:\Users\dhina\AppData\Local\Microsoft\WindowsApps;C:\Users\dhina\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\dhina\AppData\Local\Programs\Python\Python312;C:\Users\dhina\AppData\Roaming\npm;C:\Users\dhina\AppData\Local\GitHubDesktop\bin;C:\Users\dhina\AppData\Local\Programs\Antigravity IDE\bin
+OneDrive=C:\Users\dhina\OneDrive
+ALLUSERSPROFILE=C:\ProgramData
+CommonProgramFiles=C:\Program Files\Common Files
+ANTIGRAVITY_TRAJECTORY_ID=212a2570-b670-4197-a1af-cda956ce3c9f
+EFC_15848_1262719628=1
+ANTIGRAVITY_LS_ADDRESS=localhost:64690
+ProgramData=C:\ProgramData
+platformcode=KV
+CM2014DIR=C:\Program Files (x86)\Common Files\Autodesk Shared\Materials\
+COMPUTERNAME=DHINA
+VSCODE_CODE_CACHE_PATH=C:\Users\dhina\AppData\Roaming\Antigravity IDE\CachedData\ecfbad74d93962fc8ca485d93ab9b4f3d4cb6cf8
+ANTIGRAVITY_SAFECLIS_SOURCE=C:/Users/dhina/.gemini/antigravity-ide/bin/safeclis/src
+ANTIGRAVITY_AGENT=1
+CommonProgramW6432=C:\Program Files\Common Files
+EFC_15848_1592913036=1
+EFC_15848_2283032206=1
+ILBDIR=C:\Program Files (x86)\Common Files\Autodesk Shared\Materials\
+TMP=C:\Users\dhina\AppData\Local\Temp
+VSCODE_IPC_HOOK=\\.\pipe\01bc6b2a-1.107.0-main-sock
+DriverData=C:\Windows\System32\Drivers\DriverData
+EFC_15848_2775293581=1
+VSCODE_PID=596
+windir=C:\WINDOWS
+GIT_TRACE2_PARENT_SID=21faaeb3-24fb-455b-ad69-819ebdf7aba6
+SystemDrive=C:
+NUMBER_OF_PROCESSORS=4
+OS=Windows_NT
+ZES_ENABLE_SYSMAN=1
+ProgramFiles=C:\Program Files
+ComSpec=C:\WINDOWS\system32\cmd.exe
+HOMEDRIVE=C:
+PSModulePath=C:\Users\dhina\OneDrive\Documents\PowerShell\Modules;C:\Program Files\PowerShell\Modules;c:\program files\windowsapps\microsoft.powershell_7.6.6.0_x64__8wekyb3d8bbwe\Modules;C:\Program Files\WindowsPowerShell\Modules;C:\WINDOWS\system32\WindowsPowerShell\v1.0\Modules
+EFC_15848_4126798990=1
+LOGONSERVER=\\DHINA
+ANTIGRAVITY_CSRF_TOKEN=c041b2b4-7966-43ba-9b8c-d81c7caee9e9
+ANTIGRAVITY_CONVERSATION_ID=a2abf5d1-603f-4e08-9834-c586d0cfa9e6
+APPDATA=C:\Users\dhina\AppData\Roaming
+USERDOMAIN=DHINA
+PROCESSOR_LEVEL=6
+ANTIGRAVITY_EDITOR_APP_ROOT=c:\Users\dhina\AppData\Local\Programs\Antigravity IDE\resources\app
+LOCALAPPDATA=C:\Users\dhina\AppData\Local
+VSCODE_NLS_CONFIG={"userLocale":"en-us","osLocale":"en-in","resolvedLanguage":"en","defaultMessagesFile":"C:\\Users\\dhina\\AppData\\Local\\Programs\\Antigravity IDE\\resources\\app\\out\\nls.messages.json","locale":"en-us","availableLanguages":{}}
+ANTIGRAVITY_AGENTAPI_EXE=c:\Users\dhina\AppData\Local\Programs\Antigravity IDE\resources\app\extensions\antigravity\bin\language_server_windows_x64.exe
+CommonProgramFiles(x86)=C:\Program Files (x86)\Common Files
+RegionCode=APJ
+PUBLIC=C:\Users\Public
+ANTIGRAVITY_LS_VERSION=ide-2.4.5
+
+
+------------
+Diagnostic: File system
+Skipped: False
+Success: True
+Exception: None
+Log:
+Temporary directory is 'C:\Users\dhina\AppData\Local\Temp\'...
+Checking basic file I/O...
+Writing to temporary file 'C:\Users\dhina\AppData\Local\Temp\0cb742e18acad713a4021bb8'... OK
+Reading from temporary file 'C:\Users\dhina\AppData\Local\Temp\0cb742e18acad713a4021bb8'... OK
+Deleting temporary file 'C:\Users\dhina\AppData\Local\Temp\0cb742e18acad713a4021bb8'... OK
+Testing IFileSystem instance...
+UserHomePath: C:\Users\dhina
+UserDataDirectoryPath: C:\Users\dhina\.gcm
+GetCurrentDirectory(): C:\Users\dhina\OneDrive\Desktop\Downloads\ComicCraft_Project\ComicCraft
+
+------------
+Diagnostic: Networking
+Skipped: False
+Success: True
+Exception: None
+Log:
+Checking networking and HTTP stack...
+Creating HTTP client... OK
+IsNetworkAvailable: True
+Sending HEAD request to http://example.com... OK
+Sending HEAD request to https://example.com... OK
+Acquiring free TCP port... OK
+Testing local HTTP loopback connections...
+Creating new HTTP listener for http://localhost:62971/... OK
+Waiting for loopback connection... OK
+Writing response... OK
+Waiting for response data... OK
+Loopback connection data OK
+
+------------
+Diagnostic: Git
+Skipped: False
+Success: True
+Exception: None
+Log:
+Getting Git version... OK
+Git version is '2.55.0.windows.4'
+Locating current repository...Git repository at 'C:/Users/dhina/OneDrive/Desktop/Downloads/ComicCraft_Project/ComicCraft/.git'
+ OK
+Listing all Git configuration... OK
+Git configuration:
+file:C:/Program Files/Git/etc/gitconfig	diff.astextplain.textconv=astextplain
+file:C:/Program Files/Git/etc/gitconfig	filter.lfs.clean=git-lfs clean -- %f
+file:C:/Program Files/Git/etc/gitconfig	filter.lfs.smudge=git-lfs smudge -- %f
+file:C:/Program Files/Git/etc/gitconfig	filter.lfs.process=git-lfs filter-process
+file:C:/Program Files/Git/etc/gitconfig	filter.lfs.required=true
+file:C:/Program Files/Git/etc/gitconfig	http.sslbackend=openssl
+file:C:/Program Files/Git/etc/gitconfig	http.sslcainfo=C:/Program Files/Git/mingw64/etc/ssl/certs/ca-bundle.crt
+file:C:/Program Files/Git/etc/gitconfig	core.autocrlf=true
+file:C:/Program Files/Git/etc/gitconfig	core.fscache=true
+file:C:/Program Files/Git/etc/gitconfig	core.symlinks=false
+file:C:/Program Files/Git/etc/gitconfig	pull.rebase=false
+file:C:/Program Files/Git/etc/gitconfig	credential.helper=manager
+file:C:/Program Files/Git/etc/gitconfig	credential.https://dev.azure.com.usehttppath=true
+file:C:/Program Files/Git/etc/gitconfig	init.defaultbranch=master
+file:C:/Users/dhina/.gitconfig	filter.lfs.required=true
+file:C:/Users/dhina/.gitconfig	filter.lfs.clean=git-lfs clean -- %f
+file:C:/Users/dhina/.gitconfig	filter.lfs.smudge=git-lfs smudge -- %f
+file:C:/Users/dhina/.gitconfig	filter.lfs.process=git-lfs filter-process
+file:C:/Users/dhina/.gitconfig	user.name=monisha-maker
+file:C:/Users/dhina/.gitconfig	user.email=monalisamoni2401@gmail.com
+file:C:/Users/dhina/.gitconfig	core.autocrlf=true
+file:.git/config	core.repositoryformatversion=0
+file:.git/config	core.filemode=false
+file:.git/config	core.bare=false
+file:.git/config	core.logallrefupdates=true
+file:.git/config	core.symlinks=false
+file:.git/config	core.ignorecase=true
+file:.git/config	remote.origin.url=https://monalisamoni2401-debug@github.com/monalisamoni2401-debug/comicraft.git
+file:.git/config	remote.origin.fetch=+refs/heads/*:refs/remotes/origin/*
+file:.git/config	user.name=monalisamoni2401-debug
+
+
+------------
+Diagnostic: Credential storage
+Skipped: False
+Success: True
+Exception: None
+Log:
+ICredentialStore instance is of type: CredentialStore
+Writing test credential... OK
+Reading test credential... OK
+Deleting test credential... OK
+
+------------
+Diagnostic: Microsoft authentication (AAD/MSA)
+Skipped: False
+Success: True
+Exception: None
+Log:
+Broker is not enabled.
+Gathering MSAL token cache data... OK
+CacheDirectory: C:\Users\dhina\AppData\Local\.IdentityService
+CacheFileName: msal.cache
+CacheFilePath: C:\Users\dhina\AppData\Local\.IdentityService\msal.cache
+Creating cache helper... OK
+Verifying MSAL token cache persistence... OK
+
+------------
+Diagnostic: GitHub API
+Skipped: False
+Success: True
+Exception: None
+Log:
+Using 'https://github.com/' as API target.
+Querying '/meta' endpoint... OK
+
