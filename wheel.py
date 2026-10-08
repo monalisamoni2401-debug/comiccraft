@@ -1,37 +1,40 @@
-import logging
-import os
 from typing import Optional
 
-from pip._vendor.pyproject_hooks import BuildBackendHookCaller
+from pip._vendor.packaging.utils import canonicalize_name
 
-from pip._internal.utils.subprocess import runner_with_spinner_message
+from pip._internal.distributions.base import AbstractDistribution
+from pip._internal.index.package_finder import PackageFinder
+from pip._internal.metadata import (
+    BaseDistribution,
+    FilesystemWheel,
+    get_wheel_distribution,
+)
 
-logger = logging.getLogger(__name__)
 
+class WheelDistribution(AbstractDistribution):
+    """Represents a wheel distribution.
 
-def build_wheel_pep517(
-    name: str,
-    backend: BuildBackendHookCaller,
-    metadata_directory: str,
-    tempd: str,
-) -> Optional[str]:
-    """Build one InstallRequirement using the PEP 517 build process.
-
-    Returns path to wheel if successfully built. Otherwise, returns None.
+    This does not need any preparation as wheels can be directly unpacked.
     """
-    assert metadata_directory is not None
-    try:
-        logger.debug("Destination directory: %s", tempd)
 
-        runner = runner_with_spinner_message(
-            f"Building wheel for {name} (pyproject.toml)"
-        )
-        with backend.subprocess_runner(runner):
-            wheel_name = backend.build_wheel(
-                tempd,
-                metadata_directory=metadata_directory,
-            )
-    except Exception:
-        logger.error("Failed building wheel for %s", name)
+    @property
+    def build_tracker_id(self) -> Optional[str]:
         return None
-    return os.path.join(tempd, wheel_name)
+
+    def get_metadata_distribution(self) -> BaseDistribution:
+        """Loads the metadata from the wheel file into memory and returns a
+        Distribution that uses it, not relying on the wheel file or
+        requirement.
+        """
+        assert self.req.local_file_path, "Set as part of preparation during download"
+        assert self.req.name, "Wheels are never unnamed"
+        wheel = FilesystemWheel(self.req.local_file_path)
+        return get_wheel_distribution(wheel, canonicalize_name(self.req.name))
+
+    def prepare_distribution_metadata(
+        self,
+        finder: PackageFinder,
+        build_isolation: bool,
+        check_build_deps: bool,
+    ) -> None:
+        pass

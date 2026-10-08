@@ -1,20 +1,51 @@
-from typing import Callable, List, Optional
+import abc
+from typing import Optional
 
-from pip._internal.req.req_install import InstallRequirement
-from pip._internal.req.req_set import RequirementSet
-
-InstallRequirementProvider = Callable[
-    [str, Optional[InstallRequirement]], InstallRequirement
-]
+from pip._internal.index.package_finder import PackageFinder
+from pip._internal.metadata.base import BaseDistribution
+from pip._internal.req import InstallRequirement
 
 
-class BaseResolver:
-    def resolve(
-        self, root_reqs: List[InstallRequirement], check_supported_wheels: bool
-    ) -> RequirementSet:
+class AbstractDistribution(metaclass=abc.ABCMeta):
+    """A base class for handling installable artifacts.
+
+    The requirements for anything installable are as follows:
+
+     - we must be able to determine the requirement name
+       (or we can't correctly handle the non-upgrade case).
+
+     - for packages with setup requirements, we must also be able
+       to determine their requirements without installing additional
+       packages (for the same reason as run-time dependencies)
+
+     - we must be able to create a Distribution object exposing the
+       above metadata.
+
+     - if we need to do work in the build tracker, we must be able to generate a unique
+       string to identify the requirement in the build tracker.
+    """
+
+    def __init__(self, req: InstallRequirement) -> None:
+        super().__init__()
+        self.req = req
+
+    @abc.abstractproperty
+    def build_tracker_id(self) -> Optional[str]:
+        """A string that uniquely identifies this requirement to the build tracker.
+
+        If None, then this dist has no work to do in the build tracker, and
+        ``.prepare_distribution_metadata()`` will not be called."""
         raise NotImplementedError()
 
-    def get_installation_order(
-        self, req_set: RequirementSet
-    ) -> List[InstallRequirement]:
+    @abc.abstractmethod
+    def get_metadata_distribution(self) -> BaseDistribution:
+        raise NotImplementedError()
+
+    @abc.abstractmethod
+    def prepare_distribution_metadata(
+        self,
+        finder: PackageFinder,
+        build_isolation: bool,
+        check_build_deps: bool,
+    ) -> None:
         raise NotImplementedError()
