@@ -1,12 +1,17 @@
-import argparse
+"""
+    pygments.__main__
+    ~~~~~~~~~~~~~~~~~
 
-from pip._vendor.certifi import contents, where
+    Main entry point for ``python -m pygments``.
 
-parser = argparse.ArgumentParser()
-parser.add_argument("-c", "--contents", action="store_true")
-args = parser.parse_args()
+    :copyright: Copyright 2006-2023 by the Pygments team, see AUTHORS.
+    :license: BSD, see LICENSE for details.
+"""
 
-if args.contents:
-    print(contents())
-else:
-    print(where())
+import sys
+from pip._vendor.pygments.cmdline import main
+
+try:
+    sys.exit(main(sys.argv))
+except KeyboardInterrupt:
+    sys.exit(1)
